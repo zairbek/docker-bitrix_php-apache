@@ -10,5 +10,6 @@
     <h1>bitrix docker</h1>
     <p><a href="bitrix_server_test.php">bitrix_server_test.php</a></p>
     <p><a href="bitrixsetup.php">bitrixsetup.php</a></p>
+    <p><a href="phpinfo.php">phpinfo.php</a></p>
 </body>
 </html>
