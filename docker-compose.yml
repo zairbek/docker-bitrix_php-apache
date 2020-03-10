@@ -2,7 +2,11 @@ version: "2"
 
 services:
   php-apache:
-    build: ./docker/phpApache
+    build:
+      context: ./docker/phpApache
+      args:
+        - USER_ID
+        - GROUP_ID
     volumes:
       # public
       - ./www:/var/www/html
