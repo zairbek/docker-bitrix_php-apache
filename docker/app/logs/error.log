@@ -199,3 +199,6 @@ sh: 1: -t: not found
 [Sun Mar 22 15:02:48.257528 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 sh: 1: -t: not found
 sh: 1: -t: not found
+[Sun Mar 22 15:19:58.718828 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sun Mar 22 15:21:04.527025 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.1.33 configured -- resuming normal operations
+[Sun Mar 22 15:21:04.527190 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
