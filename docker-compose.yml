@@ -33,7 +33,7 @@ services:
       # configs
       - ./docker/db/configs/my.cnf:/etc/mysql/my.cnf
 
-    restart: always
+    # restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 1
       MYSQL_DATABASE: local
