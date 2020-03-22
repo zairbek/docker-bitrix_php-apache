@@ -2,16 +2,20 @@ version: "2"
 
 services:
   php-apache:
-    build: ./docker/phpApache
+    build:
+      context: ./docker/phpApache
+      args:
+        - USER_ID 
+        - GROUP_ID
+
     volumes:
       # public
       - ./www:/var/www/html
       # configs
       - ./docker/phpApache/configs/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/phpApache/configs/sites-available:/etc/apache2/sites-available
       # logs
       - ./docker/phpApache/logs:/var/log/apache2
-      # configs
-      - ./docker/phpApache/configs/sites-available:/etc/apache2/sites-available
     ports:
       - "80:80"
 
