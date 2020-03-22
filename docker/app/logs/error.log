@@ -190,3 +190,12 @@ sh: 1: -t: not found
 [Sun Mar 22 14:40:59.400985 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 sh: 1: -t: not found
 sh: 1: -t: not found
+[Sun Mar 22 14:41:53.146563 2020] [php7:notice] [pid 18] [client 127.0.0.1:33816] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/html/bitrix/modules/main/admin/site_checker.php on line 132
+[Sun Mar 22 14:41:53.148237 2020] [php7:notice] [pid 18] [client 127.0.0.1:33816] PHP Stack trace:
+[Sun Mar 22 14:41:53.148288 2020] [php7:notice] [pid 18] [client 127.0.0.1:33816] PHP   1. {main}() /var/www/html/bitrix/admin/site_checker.php:0
+[Sun Mar 22 14:41:53.148323 2020] [php7:notice] [pid 18] [client 127.0.0.1:33816] PHP   2. require() /var/www/html/bitrix/admin/site_checker.php:1
+[Sun Mar 22 15:02:38.533349 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sun Mar 22 15:02:48.257346 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.1.33 configured -- resuming normal operations
+[Sun Mar 22 15:02:48.257528 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+sh: 1: -t: not found
+sh: 1: -t: not found
