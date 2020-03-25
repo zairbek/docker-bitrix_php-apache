@@ -14,6 +14,7 @@ services:
       # configs
       - ./docker/app/configs/php.ini:/usr/local/etc/php/php.ini
       - ./docker/app/configs/sites-available:/etc/apache2/sites-available
+      - ./docker/app/configs/sites-available:/etc/apache2/sites-enabled
       # hosts
       - ./docker/app/configs/hosts:/etc/hosts
       # logs
@@ -30,6 +31,7 @@ services:
 
   db:
     image: mysql:5.7
+    user: "1000"
     volumes:
       # db
       - ./docker/db/mysql:/var/lib/mysql
