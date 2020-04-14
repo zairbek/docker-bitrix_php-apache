@@ -47,7 +47,8 @@ RUN docker-php-source extract && \
 	docker-php-ext-enable xdebug redis && \
     docker-php-source delete
 
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
+    a2enmod rewrite.load
 
 
 ARG USER_ID
